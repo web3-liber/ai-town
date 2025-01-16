@@ -83,11 +83,16 @@ just convex env set REPLICATE\_API\_TOKEN <替换为自己的token>
 ```json
     "predev": "just convex dev --run init --until-success",
 ```
+3. 配置.env.local 文件
 
-3. 启动前后端
+```bash
+VITE_CONVEX_URL=http://127.0.0.1:3210
+```
+
+4. 启动前后端
 
 ```bash
 npm run dev  
 ```
 
-4. 如果需要监听所有网络，修改package.json文件，将dev:frontend的值，由vite 修改为vite --host
+5. 如果需要监听所有网络，修改package.json文件，将dev:frontend的值，由vite 修改为vite --host
